@@ -8,6 +8,7 @@
 - warto korzystać ze statycznych metod fabrycznych - np. tworzenie nowych obiektów Klasa.of
 - statyczne pole np. typu boolean może przechowywać flagi
 - metody powinny mieć jak mniej parametrów
+- metoda powinna mieć jeden cel
 - metody powinny mieć jeden poziom wcięcia (jeśli metoda ma więcej niż 2 wcięcia należy wydzielić metodę)
 - nie mieszać ważnych koncepcji ze szczegółami implementacyjnymi (wynosić mniejsze kawałki kodu)
 - na górze klasy umieszczamy metody z wysokim poziomem abstrakcji a idąc w dół z coraz mniejszeym
@@ -15,6 +16,7 @@
 - nazwa metody powinna być zrozumiała, zgodna z kontekstem użycia, bez nadmiarowych informacji, nazwa zgodna z użyciem
 - nazwy powinny być wyróżnialne, klasa rzeczownik, metoda czasownik
 - unikaj nie jasności w nazwach
+- używając dobrze nazwanych stałych sprawiamy, że kod staje się czytelniejszy
 - kod powinien być łatwo czytelny jak książka, więcej czasu czytamy kod niż go piszemy
 - zamieniamy BigDecimal na ValueObjecty
   np. zamiast dt - currentDate
