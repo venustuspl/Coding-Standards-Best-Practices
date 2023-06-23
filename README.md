@@ -30,3 +30,11 @@
 - reużywalność
 - utrzymywalność
 - testowalność
+
+## 2. Hermetyzacja
+
+- nie używanie hermetyzacji powoduje: wycieki logiki, brak kontroli nad zmianą, utrudniona czytelność, duży coupling
+- zmiany powinny się odbywać na danym obiekcie, ewentualnie na klasach, które kożystają z tego obiektu
+  . wystawiając interfejs zmniejszamy coupling obiektów
+- hermetyzacja to wystawienie abstrakcji a nie wystawienie getterów i setterów, które zawierają nazwy pól
+- logika powinna być w jednym miejcu, czyli np. na obiekcie
