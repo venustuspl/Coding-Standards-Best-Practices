@@ -38,3 +38,10 @@
   . wystawiając interfejs zmniejszamy coupling obiektów
 - hermetyzacja to wystawienie abstrakcji a nie wystawienie getterów i setterów, które zawierają nazwy pól
 - logika powinna być w jednym miejcu, czyli np. na obiekcie
+- metody biznesowe to takie, które odwzorowują rzeczywistość
+- nazwa metody ma mówić co się w niej wykona
+- jeśli zmieniamy status obiektu to taka metoda powinna być w obiekcie
+- anemiczny obiekt to antywrzozec programowania obiektowego, który nie posiada metod
+- pola i klasy z reguły ustawiamy na private - nie udostępniamy na zewnątrz
+- zaletami hermetyzacji są: kontrola dostępu, testowalność, SRP, czytelność kodu, wymienialność
+- 
