@@ -46,3 +46,13 @@
 - zaletami hermetyzacji są: kontrola dostępu, testowalność, SRP, czytelność kodu, wymienialność
 - Prawo Demeter - obiekt może komunikować się z bezpośrednimi obiektami (jedna kropa) / obiekty przekazane do metody, dostępne glolablnie, stworzone przez metode, dostępne we właściwościach klasy. Dany obiekt nie może zaglądać do wnętrza obiektów którymi manipuluje. Jedna klasa nie powinna wiedzieć wszystkiego o innych klasach. Np. klasa Company o Eemployee i Team. Metody wyliczające dane w departamentach powinny znajdować się w departamentach.
 - do konkretnych metod warto przekazywać interfejsy, żeby nie być zależnym od konkretnej implementacji na obiekcie
+
+## 3. Value Objects
+
+- obiekty niezmienne to takie, które zostały zainicjalizowane w konstruktorze i ich stan się nie zmienia bo nie mają getterów i setterów, takie obiekty zapewniają bezpieczeństwo i testowalność
+- pola powinny być private final
+- zmieniając taki obiekt tworzymy nową instancję
+- defensywana kopia - najpierw tworzymy kopie obiektu a później kopjujemy dane
+- klasa nie powinna być rozszrzalna - final class lub statyczna metoda fabryczna: ofKilometers
+- zalety: używanie w wątkach, hermetyzacja, materiał do budowy nowych obiektów, zawsze te same wartości
+- wady: zmieniając coś zawsze trzeba tworzyć nowy obiekt
