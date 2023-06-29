@@ -56,3 +56,8 @@
 - klasa nie powinna być rozszrzalna - final class lub statyczna metoda fabryczna: ofKilometers
 - zalety: używanie w wątkach, hermetyzacja, materiał do budowy nowych obiektów, zawsze te same wartości
 - wady: zmieniając coś zawsze trzeba tworzyć nowy obiekt
+- łątwiej tworzyć małe obiekty niezmienne, w dużych należey ograniczyć możliwość zmiany
+- wrzozec Value Object zwiększa czytelność kodu
+- wrzozec Value Object jest cześcią koncepcji DDD
+- aby utworzyć value objecty zbieramy zbieramy grupy wartości
+- obiekt vo powinien być niezmienny, w konstruktorze powinna być walidacja, 
