@@ -60,4 +60,8 @@
 - wrzozec Value Object zwiększa czytelność kodu
 - wrzozec Value Object jest cześcią koncepcji DDD
 - aby utworzyć value objecty zbieramy zbieramy grupy wartości
-- obiekt vo powinien być niezmienny, w konstruktorze powinna być walidacja, 
+- obiekt vo powinien być niezmienny, w konstruktorze powinna być walidacja
+- Lista<Emaili> jest czytelniejsza niż Lista<Stringów>
+- vo najlepiej urzywać w wątkach
+- vo redukuje użycie typów prymitywnych
+- 
