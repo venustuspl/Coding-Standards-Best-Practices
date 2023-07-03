@@ -64,4 +64,6 @@
 - Lista<Emaili> jest czytelniejsza niż Lista<Stringów>
 - vo najlepiej urzywać w wątkach
 - vo redukuje użycie typów prymitywnych
-- 
+- vo wprowadzamy jeśli widzimy z tego większą kożyść niż prracę
+- vo tworzymy wydzielając parametry, które można pogrupować
+- dzięki dobrej nazwie od razu wiemy co zawiera vo np. PriceDiscount (kod staje się czytelniejszy)
