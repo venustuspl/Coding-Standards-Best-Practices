@@ -18,6 +18,9 @@
 - unikaj nie jasności w nazwach
 - używając dobrze nazwanych stałych sprawiamy, że kod staje się czytelniejszy
 - kod powinien być łatwo czytelny jak książka, więcej czasu czytamy kod niż go piszemy
+- uczcąc się pisania czystego kodu można robić lepsze code review
+- należy budować nawyk refaktoryzacji, czyli np. zmiana nazwy
+- aby pisać czysty kod należy poznać fundamenty: hermetyzacja, zasady solid, grasp
 - zamieniamy BigDecimal na ValueObjecty
   np. zamiast dt - currentDate
   zamiast execute - generateRaport
