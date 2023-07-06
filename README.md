@@ -71,3 +71,14 @@
 - vo wprowadzamy jeśli widzimy z tego większą kożyść niż prracę
 - vo tworzymy wydzielając parametry, które można pogrupować
 - dzięki dobrej nazwie od razu wiemy co zawiera vo np. PriceDiscount (kod staje się czytelniejszy)
+
+## 4. Solid
+
+- SOLID to mnemonik pięciu zasad:
+
+- S – SRP – Single responsibility principle,
+- O – OCP – Open/Closed principle,
+- L – LSP – Liskov substitution principle,
+- I – ISP – Interface segregation principle,
+- D – DIP – Dependency inversion principle
+- https://blog.i-systems.pl/krotko-solid/
