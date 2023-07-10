@@ -76,7 +76,7 @@
 
 - SOLID to mnemonik pięciu zasad:
 
-- S – SRP – Single responsibility principle,
+- S – SRP – Single responsibility principle - jedna odpowiedzialność czyli jeden powód do zmiany, np. Person nie powinien zmieniać adresów, lub zajmować się walidacją emaili
 - O – OCP – Open/Closed principle,
 - L – LSP – Liskov substitution principle,
 - I – ISP – Interface segregation principle,
