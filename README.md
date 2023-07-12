@@ -78,7 +78,7 @@
 
 - S – SRP – Single responsibility principle - jedna odpowiedzialność czyli jeden powód do zmiany, np. Person nie powinien zmieniać adresów, lub zajmować się walidacją emaili
 - O – OCP – Open/Closed principle - klasa powinna być „otwarta na rozszerzenia a zamknięta na modyfikacje”. Uściślając – nie powinno dojść do sytuacji w której trzeba modyfikować kod. Jest to zabronione, gdyż zmiana deklaracji metody może spowodować błędne działanie w innych miejscach systemu. Np. tworząc klasych pochode Shape typu Circle, Square powinny implementować interfejs zawierający nazwę metody obliczającej powierzhnie. Czyli każda klasa pochodna posiada włąsną logikę obliczania pola i je nie zmieniamy np. do dając do systemu klasę Triangle
-- L – LSP – Liskov substitution principle,
+- L – LSP – Liskov substitution principle - w miejscu klasy bazowej możemy użyć dowolnej klasy, która po niej dziedziczy. Oznacza to, że klasa pochodna musi zachować 100% interfejsu klasy bazowej (wszystkie metody muszą przyjmować te same argumenty i zwracać te same typy). I np. w miejscu użycia klasy Figura moża podstawiać Kwadrat i Prostokąt i obliczać ich pole
 - I – ISP – Interface segregation principle,
 - D – DIP – Dependency inversion principle
 - https://blog.i-systems.pl/krotko-solid/
