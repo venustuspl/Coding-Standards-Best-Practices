@@ -25,6 +25,26 @@
   np. zamiast dt - currentDate
   zamiast execute - generateRaport
 
+# Clean Code wg. Bard
+
+Czysty kod w Javie to taki kod, który jest łatwy do zrozumienia, testowania i utrzymania. Powinien on być również spójny i zgodny z konwencjami nazewnictwa oraz stylem kodu.
+
+Oto kilka założeń, jakie powinien spełniać czysty kod w Javie:
+
+Kod powinien być czytelny. To oznacza, że powinien być napisany w jasny i prosty sposób, bez użycia skrótów i żargonu. Nazewnictwo zmiennych, klas i metod powinno być również jasne i opisowe.
+Kod powinien być logiczny. To oznacza, że powinien być łatwy do zrozumienia i logicznego śledzenia. Zadania powinny być podzielone na małe, łatwe do zrozumienia kroki.
+Kod powinien być spójny. To oznacza, że powinien być napisany w jednolitym stylu i zgodnie z konwencjami nazewnictwa.
+Kod powinien być testowalny. To oznacza, że powinien być łatwy do testowania za pomocą testów jednostkowych.
+Kod powinien być utrzymywalny. To oznacza, że powinien być łatwy do modyfikowania i rozbudowywania bez wprowadzania błędów.
+Oto kilka dodatkowych wskazówek dotyczących pisania czystego kodu w Javie:
+
+Stosuj komentarze z umiarem. Komentarze powinny być używane tylko wtedy, gdy kod nie jest jasny sam w sobie.
+Stosuj konwencje nazewnictwa. Konwencje nazewnictwa ułatwiają zrozumienie kodu przez innych programistów.
+Stosuj narzędzia do formatowania kodu. Narzędzie do formatowania kodu może pomóc w utrzymaniu spójnego stylu kodu.
+Stosuj narzędzia do testowania kodu. Testy jednostkowe mogą pomóc w zapewnieniu jakości kodu.
+Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która się opłaca. Czysty kod jest łatwy do zrozumienia, testowania i utrzymania, co może prowadzić do szybszego rozwoju, mniejszej liczby błędów i lepszej jakości kodu.
+
+
 ### a) Kryteria oceny kodu:
 
 - efektywność
