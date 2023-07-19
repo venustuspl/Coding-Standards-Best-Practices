@@ -25,7 +25,7 @@
   np. zamiast dt - currentDate
   zamiast execute - generateRaport
 
-# Clean Code wg. Bard
+### Clean Code wg. Bard
 
 Czysty kod w Javie to taki kod, który jest łatwy do zrozumienia, testowania i utrzymania. Powinien on być również spójny i zgodny z konwencjami nazewnictwa oraz stylem kodu.
 
