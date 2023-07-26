@@ -22,8 +22,7 @@
 - należy budować nawyk refaktoryzacji, czyli np. zmiana nazwy
 - aby pisać czysty kod należy poznać fundamenty: hermetyzacja, zasady solid, grasp
 - zamieniamy BigDecimal na ValueObjecty
-  np. zamiast dt - currentDate
-  zamiast execute - generateRaport
+  np. zamiast dt - currentDate zamiast execute - generateRaport
 
 ### Clean Code wg. Bard
 
@@ -43,7 +42,6 @@ Stosuj konwencje nazewnictwa. Konwencje nazewnictwa ułatwiają zrozumienie kodu
 Stosuj narzędzia do formatowania kodu. Narzędzie do formatowania kodu może pomóc w utrzymaniu spójnego stylu kodu.
 Stosuj narzędzia do testowania kodu. Testy jednostkowe mogą pomóc w zapewnieniu jakości kodu.
 Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która się opłaca. Czysty kod jest łatwy do zrozumienia, testowania i utrzymania, co może prowadzić do szybszego rozwoju, mniejszej liczby błędów i lepszej jakości kodu.
-
 
 ### a) Kryteria oceny kodu:
 
@@ -71,7 +69,7 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - do konkretnych metod warto przekazywać interfejsy, żeby nie być zależnym od konkretnej implementacji na obiekcie
 - możesz przekazać do metody do obiektu jakiś interfejs(taki interface z Java), dzięki czemu możesz skorzystać z różnych serwisów, które są skomplikowane, a wtedy obiekt nie będzie zależny od implementacji. A także umożliwii wykorzystanie np. bazy danych lub inne integracje, które są w innym pakiecie, do którego ten obiekt nie ma dostępu. Sama dana klasa wystawia jakiś swój interfejs (nie w sensie Javy). Czyli dany obiekt ma jakieś publiczne metody biznesowe i na ich podstawie tylko możemy komunikować się z tym obiektem. Właśnie za pomocą tego interfejsu (tych metod biznesowych). Nie mamy dostępu do implementacji tej klasy, czyli do konkretnych pól i do ciała tych metod biznesowych. Wykorzystując same proste settery, które ustawiają tylko wartość, a logika biznesowa jest porozsiewana po innych klasach to tak naprawdę udostępniamy implementację
 - najlepiej nie korzystać z adnotacji @Setter z lomboka No bo to tworzy zwykłego settera a my raczej chcemy tworzyć metody bieznesowe
-Przy mapowaniu możemy tworzyć od razu cały obiekt za pomocą konstruktora czy buildera. Wtedy nie musimy tworzyć setterow.
+  Przy mapowaniu możemy tworzyć od razu cały obiekt za pomocą konstruktora czy buildera. Wtedy nie musimy tworzyć setterow.
 
 ## 3. Value Objects
 
