@@ -102,3 +102,14 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - I – ISP – Interface segregation principle - nie powinno się wymuszać implementacji interfejsów które nie są używane. Innymi słowy: klienci nie powinni zależeć od interfejsów, których nie używają. Oznacza to, że lepiej zdefiniować wiele mniejszych interfejsów niż jeden wielki. Np. lepiej zdefinionwać interfejsy Walk Sleep Work i klasy Human i Android mogą implementować odpowiednie interfejsy
 - D – DIP – Dependency inversion principle - moduły wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. Wszystkie zależności powinny w jak największym stopniu zależeć od abstrakcji, a nie od konkretnego typu. Czy np. w klasie PasswordReminder jako dbConnection nie powinniśmy używać konkretnego typu jak MySQlConnection ani PostgresSqlConnection tylko typ generyczny dbConnection
 - https://blog.i-systems.pl/krotko-solid/
+
+
+## 5. Clean Code by R. C. Martin
+
+# Names rules
+- Choose descriptive and unambiguous names
+- Make meaningful distinction
+- Use pronounceable names
+- Use searchable names
+- Replace magic numbers with named constants
+- Avoid encodings. Don't append prefixes or type information
