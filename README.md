@@ -113,3 +113,4 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - Use searchable names
 - Replace magic numbers with named constants
 - Avoid encodings. Don't append prefixes or type information
+
