@@ -103,6 +103,9 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - D – DIP – Dependency inversion principle - moduły wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. Wszystkie zależności powinny w jak największym stopniu zależeć od abstrakcji, a nie od konkretnego typu. Czy np. w klasie PasswordReminder jako dbConnection nie powinniśmy używać konkretnego typu jak MySQlConnection ani PostgresSqlConnection tylko typ generyczny dbConnection
 - https://blog.i-systems.pl/krotko-solid/
 
+## 5. Naming cheat sheet
+
+- https://github.com/kettanaito/naming-cheatsheet
 
 ## 5. Clean Code by R. C. Martin
 
