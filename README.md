@@ -43,6 +43,11 @@ Stosuj narzędzia do formatowania kodu. Narzędzie do formatowania kodu może po
 Stosuj narzędzia do testowania kodu. Testy jednostkowe mogą pomóc w zapewnieniu jakości kodu.
 Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która się opłaca. Czysty kod jest łatwy do zrozumienia, testowania i utrzymania, co może prowadzić do szybszego rozwoju, mniejszej liczby błędów i lepszej jakości kodu.
 
+# Metody
+
+Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
+Należy unikać metod, które zwracają argumenty. Np calculateDiscount(rate, product) - nie wiemy co się dzieje w środku z produktem. Lepiej jest zrobić addDiscount(product). Czyli metoda z opowiednią nazwą i argumentem musi od razu zostać zrozumiana bez zagłębiania się w metodzie. Lub dla większej widoczności możemy zwrócić z metody listę zmienionych obiektów: List<Orders> orders = cancelOrders(filteredOrders). Lub warto rozbijać funkcjonalność metody np. wykonać określoną okację na liście a później inną akcję na konkretnym obiekcie.
+
 ### a) Kryteria oceny kodu:
 
 - efektywność
@@ -110,10 +115,10 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 ## 5. Clean Code by R. C. Martin
 
 # Names rules
+
 - Choose descriptive and unambiguous names
 - Make meaningful distinction
 - Use pronounceable names
 - Use searchable names
 - Replace magic numbers with named constants
 - Avoid encodings. Don't append prefixes or type information
-
