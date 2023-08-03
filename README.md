@@ -47,6 +47,8 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
 Należy unikać metod, które zwracają argumenty. Np calculateDiscount(rate, product) - nie wiemy co się dzieje w środku z produktem. Lepiej jest zrobić addDiscount(product). Czyli metoda z opowiednią nazwą i argumentem musi od razu zostać zrozumiana bez zagłębiania się w metodzie. Lub dla większej widoczności możemy zwrócić z metody listę zmienionych obiektów: List<Orders> orders = cancelOrders(filteredOrders). Lub warto rozbijać funkcjonalność metody np. wykonać określoną okację na liście a później inną akcję na konkretnym obiekcie.
+Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest obiekt to metoda powinna zostać dodana do obiektu. A jeśli metoda ma 2 argumenty to można dodać metodę do 1 argumentu (obiektu) mającą pozostały 1 argument. Jeśli metoda ma więcej niż kilka argumentów to pewnie można stworzyć z niej obiekt. Można łączyć ciała metod w 1 ogólną metodę.
+
 
 ### a) Kryteria oceny kodu:
 
