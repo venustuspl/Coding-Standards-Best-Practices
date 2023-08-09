@@ -154,3 +154,16 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Prefer fewer arguments.
 - Have no side effects.
 - Don't use flag arguments. Split method into several independent methods that can be called from the client without the flag.
+
+# Source code structure
+
+- Separate concepts vertically.
+- Related code should appear vertically dense.
+- Declare variables close to their usage.
+- Dependent functions should be close.
+- Similar functions should be close.
+- Place functions in the downward direction.
+- Keep lines short.
+- Don't use horizontal alignment.
+- Use white space to associate related things and disassociate weakly related.
+- Don't break indentation.
