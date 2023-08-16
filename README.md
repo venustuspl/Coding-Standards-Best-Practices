@@ -190,5 +190,24 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Better to have many functions than to pass some code into a function to select a behavior.
 - Prefer non-static methods to static methods.
 
+# Tests
+- One assert per test.
+- Readable.
+- Fast.
+- Independent.
+- Repeatable.
+
+
+
+
+
+
+
+
+
+
+
+
+
 @Source https://gist.github.com/wojteklu/
 
