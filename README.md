@@ -205,7 +205,13 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Needless Repetition.
 - Opacity. The code is hard to understand.
 
-
+# Understandability tips
+- Be consistent. If you do something a certain way, do all similar things in the same way.
+- Use explanatory variables.
+- Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.
+- Prefer dedicated value objects to primitive type.
+- Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.
+- Avoid negative conditionals.
 
 
 
