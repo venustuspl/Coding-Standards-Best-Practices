@@ -114,7 +114,9 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 
 - https://github.com/kettanaito/naming-cheatsheet
 
-## 5. Clean Code by R. C. Martin
+## 5. Clean Code by R. C. Martin 
+
+@Source https://gist.github.com/wojteklu/
 
 # Names rules
 
@@ -146,14 +148,13 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Use as clarification of code.
 - Use as warning of consequences.
 
-# Functions rules
-
-- Small.
-- Do one thing.
-- Use descriptive names.
-- Prefer fewer arguments.
-- Have no side effects.
-- Don't use flag arguments. Split method into several independent methods that can be called from the client without the flag.
+# Design rules
+- Keep configurable data at high levels.
+- Prefer polymorphism to if/else or switch/case.
+- Separate multi-threading code.
+- Prevent over-configurability.
+- Use dependency injection.
+- Follow Law of Demeter. A class should know only its direct dependencies.
 
 # Source code structure
 
@@ -221,5 +222,5 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 
 
 
-@Source https://gist.github.com/wojteklu/
+
 
