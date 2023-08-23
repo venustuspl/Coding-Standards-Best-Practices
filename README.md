@@ -118,6 +118,8 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 
 @Source https://gist.github.com/wojteklu/
 
+
+
 # Names rules
 
 - Choose descriptive and unambiguous names
@@ -214,7 +216,11 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Avoid logical dependency. Don't write methods which works correctly depending on something else in the same class.
 - Avoid negative conditionals.
 
-
+# General rules
+- Follow standard conventions.
+- Keep it simple stupid. Simpler is always better. Reduce complexity as much as possible.
+- Boy scout rule. Leave the campground cleaner than you found it.
+- Always find root cause. Always look for the root cause of a problem.
 
 
 
