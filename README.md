@@ -119,7 +119,6 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 @Source https://gist.github.com/wojteklu/
 
 
-
 # Names rules
 
 - Choose descriptive and unambiguous names
@@ -128,6 +127,11 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - Use searchable names
 - Replace magic numbers with named constants
 - Avoid encodings. Don't append prefixes or type information
+
+# General rules
+- Follow standard conventions.
+- Keep it simple stupid. Simpler is always better. Reduce complexity as much as possible.
+- Boy scout rule. Leave the campground cleaner than you found it.
 
 # Functions rules
 
