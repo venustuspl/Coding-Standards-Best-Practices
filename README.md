@@ -114,6 +114,20 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 
 - https://github.com/kettanaito/naming-cheatsheet
 
+# What is clean code?
+Clean code is not a set of strict rules. It is a set of principles for writing code that is easy to understand and modify. In this case, “understandable” means that the code can be immediately understood by any experienced developer. The following characteristics of clean code are what make it easy to read:
+
+The entire application’s order of execution is logical and clearly structured.
+The connection between different parts of the code is quite obvious.
+The task or role of each class, function, method, and variable is immediately understandable.
+Code is easy to modify if it can be adapted and extended. This also makes it easier to correct errors in the code. Clean code is thus very easy to maintain. Easily modifiable code has the following characteristics:
+
+Classes and methods are small and only have one single task.
+Classes and methods are predictable, work as expected, and are publicly available through well-documented APIs (interfaces).
+The code uses unit tests.
+The advantages of this kind of programming are obvious. Clean code does not depend on the original developer. In principle, any programmer can work with the code. This prevents problems that may occur when working with legacy code, for example. It is also easier to maintain the code because bugs can be identified and fixed more easily.
+
+
 ## 5. Clean Code by R. C. Martin 
 
 @Source https://gist.github.com/wojteklu/
