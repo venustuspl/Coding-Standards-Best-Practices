@@ -127,6 +127,15 @@ Classes and methods are predictable, work as expected, and are publicly availabl
 The code uses unit tests.
 The advantages of this kind of programming are obvious. Clean code does not depend on the original developer. In principle, any programmer can work with the code. This prevents problems that may occur when working with legacy code, for example. It is also easier to maintain the code because bugs can be identified and fixed more easily.
 
+# Tips and Conventions to Write Cleaner Code
+Effectiveness, Efficiency and Simplicity
+Whenever I need to think about how to implement a new feature into an already existing codebase, or how to tackle the solution of a specific problem, I always prioritize this three simple things.
+
+Effectiveness
+First, our code should be effective, meaning it should solve the problem it's supposed to solve. Of course this is the most basic expectation we could have for our code, but if our implementation doesn't actually work, it's worthless to think about any other thing.
+
+Efficiency
+Second, once we know our code solves the problem, we should check if it does so efficiently. Does the program run using a reasonable amount of resources in terms of time and space? Can it run faster and with less space?
 
 ## 5. Clean Code by R. C. Martin 
 
