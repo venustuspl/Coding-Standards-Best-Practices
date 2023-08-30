@@ -110,7 +110,29 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - D – DIP – Dependency inversion principle - moduły wysokopoziomowe nie powinny zależeć od modułów niskopoziomowych. Wszystkie zależności powinny w jak największym stopniu zależeć od abstrakcji, a nie od konkretnego typu. Czy np. w klasie PasswordReminder jako dbConnection nie powinniśmy używać konkretnego typu jak MySQlConnection ani PostgresSqlConnection tylko typ generyczny dbConnection
 - https://blog.i-systems.pl/krotko-solid/
 
-## 5. Naming cheat sheet
+
+## 5. Jak pisać czysty kod?
+
+Należy sobie uświadomić, że nie ma idealnego kodu. Kod może być co najwyżej najczystszy i najlepszy, jaki mógł zostać wykonany w danym momencie. Napisanie takiego kodu wymaga umiejętności zdobytej poprzez ciężką pracę i praktykę bazując na wiedzy z dziedziny programowania, znajomości zasad, wzorców i heurystyk clean code’u.
+
+# 1. Opisowe nazwy
+Nazwy zmiennych, metod i klas powinny być opisowe, powinny przedstawiać intencje, informować, w jakim celu istnieją, co robią, jak są używane.
+Wyniesienie magicznych liczb do stałych i wprowadzenie odpowiednich nazw klasy, pola i metody znacząco poprawia czytelność. Przykładowe rozwiązanie:
+
+# 2. Nazwy na odpowiednim poziomie abstrakcji
+Nazwy mogą być opisowe, jednak mogą mówić za mało, lub za dużo na konkretnym poziomie abstrakcji. Przykładowo:
+
+# 3. Nazwy powinny opisywać efekty uboczne
+Nazwa powinna opisywać, co wykonuje dana metoda, zmienna lub klasa. Przykładowo, jeżeli funkcja wyszukuje jakiś obiekt a w przypadku kiedy go nie znajdzie tworzy nowy to lepiej użyć nazwy findOrCreate zamiast tylko find.
+
+# 4. Komentarze nie powinny istnieć
+Pisanie komentarzy w kodzie przeważnie spowodowane jest tym, że nazwy zmiennych, metod i klas są nieczytelne lub niepoprawne. Zamiast je tworzyć, lepiej poświęć czas na wyborze odpowiednich nazw. Jeśli napisanie komentarza jest rzeczywiście uzasadnione, to trzeba napisać go dobrze. Powinien być zwięzły, gramatycznie poprawny z uważnie dobranymi słowami.
+
+# 5. Zakomentowany kod powinien być usunięty
+Zakomentowany kod rodzi sporo pytań czytelnika, w ogólności zanieczyszcza cały kod i przeszkadza w czytaniu. Im dłużej istnieje, tym bardziej się psuje i traci na znaczeniu. Dodatkowo możliwe, że nikt go nie skasuje, bo nie będzie wiedział, czy jest on znaczący, czy nie, czy ktoś go potrzebuje, czy ma wobec niego jakieś plany. Zakomentowany kod powinien być zawsze usuwany.
+
+
+## 6. Naming cheat sheet
 
 - https://github.com/kettanaito/naming-cheatsheet
 
@@ -137,7 +159,7 @@ First, our code should be effective, meaning it should solve the problem it's su
 Efficiency
 Second, once we know our code solves the problem, we should check if it does so efficiently. Does the program run using a reasonable amount of resources in terms of time and space? Can it run faster and with less space?
 
-## 5. Clean Code by R. C. Martin 
+## 7. Clean Code by R. C. Martin 
 
 @Source https://gist.github.com/wojteklu/
 
