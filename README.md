@@ -131,6 +131,20 @@ Pisanie komentarzy w kodzie przeważnie spowodowane jest tym, że nazwy zmiennyc
 # 5. Zakomentowany kod powinien być usunięty
 Zakomentowany kod rodzi sporo pytań czytelnika, w ogólności zanieczyszcza cały kod i przeszkadza w czytaniu. Im dłużej istnieje, tym bardziej się psuje i traci na znaczeniu. Dodatkowo możliwe, że nikt go nie skasuje, bo nie będzie wiedział, czy jest on znaczący, czy nie, czy ktoś go potrzebuje, czy ma wobec niego jakieś plany. Zakomentowany kod powinien być zawsze usuwany.
 
+6. Formatowanie kodu zgodnie z zasadami zespołowymi
+Pracując w zespole, nie należy stosować własnych ulubionych zasad formatowania. To zespól programistów ustala jeden styl formatowania i każdy powinien się do niego dostosować. Kod musi być spójny, musi budzić zaufanie czytelnika, który uzna, że formatowanie w jednym pliku źródłowym oznacza to samo w innym.
+
+7. Funkcje powinny być małe wykonując jedną czynność
+Wielkość funkcji można zmierzyć po ilości wierszy, z których jest zbudowana. Im więcej wierszy tym funkcja bardziej nieczytelna i trudniej zrozumieć jej działanie. Małe funkcje to te, które skonstruowane są maksymalnie z 20 wierszy wykonując tylko jedną operację. Jeśli wierszy jest więcej, to prawdopodobnie funkcja wykonuje więcej czynności.
+
+8. Jak najmniejsza liczba argumentów funkcji
+Argumenty funkcji są kłopotliwe i utrudniają zrozumienie funkcji. Najlepiej konstruować funkcje bezargumentowe, później jednoargumentowe i dwuargumentowe. Funkcji trzyargumentowych należy unikać, a funkcje wieloargumentowe (więcej niż 3 argumenty) nie powinny być stosowane. Przykładowo funkcja writeText(text) jest łatwiejsza w zrozumieniu niż writeText(outputStream, text). W tej sytuacji argumentu outputStream można się pozbyć definiując je jako pole klasy. Gdy funkcja wymaga wiele argumentów, to prawdopodobnie niektóre z nich można umieścić w osobnej klasie. 
+
+9. Funkcje nie powinny zwracać null
+Zwracanie wartości null tworzy dodatkową pracę i powoduje problemy w funkcjach wywołujących. W takich przypadkach przez brak sprawdzenia wartości null traci się kontrolę nad aplikacją. Pojawiają się wyjątki NullPointerException, które w najmniej oczekiwanym czasie przerywają działanie programu. 
+
+10. Rozdzielanie poleceń i zapytań
+Funkcja powinna wykonywać jakieś polecenie lub odpowiadać na jakieś pytanie. Nie powinna robić tych dwóch operacji jednocześnie, ponieważ często prowadzi to do pomyłek. 
 
 ## 6. Naming cheat sheet
 
