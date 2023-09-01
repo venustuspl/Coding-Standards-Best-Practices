@@ -146,6 +146,24 @@ Zwracanie wartości null tworzy dodatkową pracę i powoduje problemy w funkcjac
 10. Rozdzielanie poleceń i zapytań
 Funkcja powinna wykonywać jakieś polecenie lub odpowiadać na jakieś pytanie. Nie powinna robić tych dwóch operacji jednocześnie, ponieważ często prowadzi to do pomyłek. 
 
+11. Zasada DRY (Don’t repeat yourself)
+Reguła DRY zaleca unikanie różnego rodzaju powtórzeń wykonywanych przez programistów podczas wytwarzania oprogramowania. Odnosząc się do kodu, chodzi o niewklejanie, lub niepisanie tych samych, lub bardzo podobnych fragmentów kodu w różnych miejscach. Takie powielanie kodu powoduje jego wzrost, wymaga tych samych modyfikacji w kilku miejscach w przypadku jakichkolwiek zmian algorytmu, a to z kolei zwiększa możliwość popełnienia błędu.
+Najprostsze rozwiązanie na zduplikowany kod to wyniesienie go do osobnej metody. W niektórych przypadkach pomaga zastosowanie polimorfizmu lub wzorców projektowych jak np. szablon metody, lub strategia.
+
+12. Obsługa błędów powinna być jedną operacją
+Obsługa błędów jest jedną operacją i zgodnie z zasadą pojedynczej odpowiedzialności funkcja obsługi błędów nie powinna wykonywać nic innego. Oznacza to, że słowo kluczowe try powinno być pierwszym słowem w funkcji i nie powinno się w niej znajdować nic oprócz catch i finally.
+
+13. Klasy powinny mieć jedną odpowiedzialność
+Zgodnie z zasadą pojedynczej odpowiedzialności (SRP), klasa powinna mieć tylko jeden powód do zmiany. Jeżeli klasa jest odpowiedzialna za więcej niż jeden obszar w naszej aplikacji, to może powodować to problemy w przyszłości tzn. robiąc zmiany w jednym obszarze, można zepsuć coś w innym obszarze, który wydaje się niepowiązany.
+
+14. Hermetyzacja – zmienne i funkcje użytkowe pozostają prywatne
+Najczęściej zmienne i funkcje użytkowe w klasach powinny być prywatne. Takie ukrywanie dostępność dla innych klas sprawia, że refaktoryzacja jest bezpieczniejsza a zmiana stanu obiektu w pełni kontrolowana. Czasami zmiennym, lub funkcjom zmienia się zasięg na chroniony lub dostępny w ramach pakietu. Jest to głównie wymuszone przez testy, w sytuacji kiedy test potrzebuje wywołać taką funkcję, lub odnieść się do zmiennej. Należy jednak w pierwszej kolejności szukać sposobu na zachowanie prywatności.
+
+15. Spójność klasy powinna być wysoka
+Klasa, w której każda zmienna instancyjna jest wykorzystywana w każdej metodzie, jest maksymalnie spójna. Zwykle nie jest możliwe tworzenie takich klas, ale należy dążyć do tego, aby spójność była wysoka. Dzięki temu metody i zmienne klasy są wzajemnie zależne i tworzą logiczną całość.
+
+Przy stosowaniu małych funkcji z małą liczbą parametrów często można zaobserwować, że niektóre zmienne instancyjne używane są tylko przez podzbiór metod. W tym przypadku oznacza to, że w takiej klasie istnieje inna klasa, która powinna być od niej uwolniona. Dzięki temu powstałe klasy będą bardziej spójne.
+
 ## 6. Naming cheat sheet
 
 - https://github.com/kettanaito/naming-cheatsheet
