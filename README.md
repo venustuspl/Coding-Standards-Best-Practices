@@ -23,6 +23,16 @@
 - aby pisać czysty kod należy poznać fundamenty: hermetyzacja, zasady solid, grasp
 - zamieniamy BigDecimal na ValueObjecty
   np. zamiast dt - currentDate zamiast execute - generateRaport
+- przekazywanie danych do metody poprzez długą listę parametrów jest raczej mało czytelne. Takie listy są też często mylące. 
+Parametry, które można wyliczyć z innych parametrów, warto wyliczyć właśnie na ich podstawie.
+Można wprowadzić obiekt parametryczny. Jeśli kilka danych występuje razem i są spójne ze sobą.    
+Przekazać cały obiekt.
+Jeżeli powyższe punkty nie są dobrymi opcjami to możemy zastąpić wywołanie metody wywołaniem metody obiektu. Jest to fajna praktyka, która często sprawia, że kod staje się czytelniejszy. 
+W skrócie, chodzi o to, aby stworzyć nowy obiekt i tam przenieść tą metodę. Parametry, które możemy to podajemy w konstruktorze obiektu. 
+Dodatkowo możemy sobie w konstruktorze odpowiednio te dane przygotować tak, aby uprościć korzystanie z tych danych w przeniesionej metodzie.
+Później takie wywołanie mogłoby wyglądać:
+new Scorer(name, counter).execute(score);
+Można w takiej klasie umieścić klika metod mających wspólne parametry.
 
 ### Clean Code wg. Bard
 
