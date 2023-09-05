@@ -33,6 +33,12 @@ Dodatkowo możemy sobie w konstruktorze odpowiednio te dane przygotować tak, ab
 Później takie wywołanie mogłoby wyglądać:
 new Scorer(name, counter).execute(score);
 Można w takiej klasie umieścić klika metod mających wspólne parametry.
+- w hermetyzacji chcemy pilnować tego, aby jak najmniej informacji wychodziło na zewnątrz, tylko to co najpotrzebniejsze. 
+Ale to gdzie ten obiekt będzie używany to już nie jest ważne, bo ma określony interfejs i z niego możemy korzystać. 
+Dzięki temu, ze mamy to ukryte to mozemy łatwo zmieniać implementacje plus działania na tym obiekcie są bezpieczne, bo nie mozemy wprowadzić naszego obiektu w zły stan plus logika jest w jednym miejscu.
+Natomiast chcemy dążyć do jak najmniejszego couplingu czyli do jak najmniejszej ilości powiązań.
+Lepiej przekazać jeden parametr niż cały obiekt, ale jeżeli korzystamy już z wielu danych z tego obiektu to lepiej przekazać cały obiekt, bo wtedy raczej będzie kod czytelniejszy.
+Jeszcze możemy się zastanowić czy to co robimy z tymi danymi w tej metodzie możemy wydelegować do tego obiektu. Wtedy zwiększylibyśmy hermetyzację.
 
 ### Clean Code wg. Bard
 
