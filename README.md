@@ -180,6 +180,26 @@ Klasa, w której każda zmienna instancyjna jest wykorzystywana w każdej metodz
 
 Przy stosowaniu małych funkcji z małą liczbą parametrów często można zaobserwować, że niektóre zmienne instancyjne używane są tylko przez podzbiór metod. W tym przypadku oznacza to, że w takiej klasie istnieje inna klasa, która powinna być od niej uwolniona. Dzięki temu powstałe klasy będą bardziej spójne.
 
+Podsumowanie
+
+Wybór opisowych nazw klas, funkcji i zmiennych
+Nazwy powinny być na odpowiednim poziomie abstrakcji
+Nazwy powinny opisywać efekty uboczne
+Nie należy stosować komentarzy. Kod powinien być samo opisujący się
+Zakomentowany kod powinien być usunięty
+Formatowanie kodu powinno być zgodne z zasadami przyjętymi w zespole
+Funkcje powinny być małe wykonując jedną czynność
+Funkcje powinny przyjmować maksymalnie 3 argumenty. Im mniej, tym lepiej
+Funkcje nie powinny zwracać null
+Funkcje powinny wykonywać albo jakieś polecenie, albo odpowiadać na jakieś pytanie
+Stosowanie zasady DRY
+Obsługa błędów powinna być jedną operacją
+Klasy powinny mieć jedną odpowiedzialność
+Zmienne i funkcje użytkowe powinny być prywatne
+Spójność klasy powinna być wysoka
+Kod powinien być pokryty testami jednostkowymi
+Programowanie obiektowe powinno spełniać założenia SOLID
+
 ## 6. Naming cheat sheet
 
 - https://github.com/kettanaito/naming-cheatsheet
