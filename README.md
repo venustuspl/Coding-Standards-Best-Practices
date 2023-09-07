@@ -93,6 +93,7 @@ Metody powinny mieć jak najmniej argumentów, jeśly jedynym argumentem jest ob
 - możesz przekazać do metody do obiektu jakiś interfejs(taki interface z Java), dzięki czemu możesz skorzystać z różnych serwisów, które są skomplikowane, a wtedy obiekt nie będzie zależny od implementacji. A także umożliwii wykorzystanie np. bazy danych lub inne integracje, które są w innym pakiecie, do którego ten obiekt nie ma dostępu. Sama dana klasa wystawia jakiś swój interfejs (nie w sensie Javy). Czyli dany obiekt ma jakieś publiczne metody biznesowe i na ich podstawie tylko możemy komunikować się z tym obiektem. Właśnie za pomocą tego interfejsu (tych metod biznesowych). Nie mamy dostępu do implementacji tej klasy, czyli do konkretnych pól i do ciała tych metod biznesowych. Wykorzystując same proste settery, które ustawiają tylko wartość, a logika biznesowa jest porozsiewana po innych klasach to tak naprawdę udostępniamy implementację
 - najlepiej nie korzystać z adnotacji @Setter z lomboka No bo to tworzy zwykłego settera a my raczej chcemy tworzyć metody bieznesowe
   Przy mapowaniu możemy tworzyć od razu cały obiekt za pomocą konstruktora czy buildera. Wtedy nie musimy tworzyć setterow.
+- 
 
 ## 3. Value Objects
 
@@ -341,7 +342,19 @@ Second, once we know our code solves the problem, we should check if it does so 
 
 
 
+# 10 steps to writing clean code
+Here are a few ways you can ensure your code comes out clean:
 
+Follow conventions
+Indicate variable scope
+Say what you mean
+Whitespace is nice space
+Commenting saves lives
+Automate to save time and space
+Remember the power of i
+Birds of a feather group similar variables together
+Keep it functional
+Keep it classy
 
 
 
