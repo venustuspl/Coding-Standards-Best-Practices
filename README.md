@@ -345,7 +345,10 @@ Second, once we know our code solves the problem, we should check if it does so 
 # 10 steps to writing clean code
 Here are a few ways you can ensure your code comes out clean:
 
-Follow conventions
+* Follow conventions
+Using a naming convention is a great way to get started — it keeps things clear and lets you know exactly what you’re working with. 
+A naming convention basically means you decide you’ll call your variables by names that adhere to a certain set of rules. It can get hairy, and a lot of people don’t always agree on which is best. So to keep it simple. It can be something as simple as prefixing variable names with their data type,
+
 Indicate variable scope
 Say what you mean
 Whitespace is nice space
