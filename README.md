@@ -23,6 +23,7 @@
 - aby pisać czysty kod należy poznać fundamenty: hermetyzacja, zasady solid, grasp
 - zamieniamy BigDecimal na ValueObjecty
   np. zamiast dt - currentDate zamiast execute - generateRaport
+- obsługa wyjątków: jeśli blok try {} jest mocno rozbudowany to warto go wynieść do metody tak aby był bardziej zrozumiały, nazwa metody też będzie pomocna w zrozumieniu kodu
 - przekazywanie danych do metody poprzez długą listę parametrów jest raczej mało czytelne. Takie listy są też często mylące. 
 Parametry, które można wyliczyć z innych parametrów, warto wyliczyć właśnie na ich podstawie.
 Można wprowadzić obiekt parametryczny. Jeśli kilka danych występuje razem i są spójne ze sobą.    
