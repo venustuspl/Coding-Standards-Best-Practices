@@ -24,6 +24,10 @@
 - zamieniamy BigDecimal na ValueObjecty
   np. zamiast dt - currentDate zamiast execute - generateRaport
 - obsługa wyjątków: jeśli blok try {} jest mocno rozbudowany to warto go wynieść do metody tak aby był bardziej zrozumiały, nazwa metody też będzie pomocna w zrozumieniu kodu
+- małe metody można próbować zmieścić w jednej linii, np. w 1 jednym warunku
+- obliczanie zmiennych lokalnych można wynosić do innych metod, dzięki temu można te metody wykorzystać w innych miejscach i metody będą prostrze
+- zmienna lokalna powinna być final to znaczy, że ma dobrze zdefiniowany 1 cel
+
 - przekazywanie danych do metody poprzez długą listę parametrów jest raczej mało czytelne. Takie listy są też często mylące. 
 Parametry, które można wyliczyć z innych parametrów, warto wyliczyć właśnie na ich podstawie.
 Można wprowadzić obiekt parametryczny. Jeśli kilka danych występuje razem i są spójne ze sobą.    
