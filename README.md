@@ -16,6 +16,7 @@
 - nazwa metody powinna być zrozumiała, zgodna z kontekstem użycia, bez nadmiarowych informacji, nazwa zgodna z użyciem
 - nazwy powinny być wyróżnialne, klasa rzeczownik, metoda czasownik
 - unikaj nie jasności w nazwach
+- używajmy dobrze nazwanych stałych
 - używając dobrze nazwanych stałych sprawiamy, że kod staje się czytelniejszy
 - kod powinien być łatwo czytelny jak książka, więcej czasu czytamy kod niż go piszemy
 - uczcąc się pisania czystego kodu można robić lepsze code review
