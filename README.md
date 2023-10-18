@@ -65,6 +65,19 @@ Stosuj narzędzia do formatowania kodu. Narzędzie do formatowania kodu może po
 Stosuj narzędzia do testowania kodu. Testy jednostkowe mogą pomóc w zapewnieniu jakości kodu.
 Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która się opłaca. Czysty kod jest łatwy do zrozumienia, testowania i utrzymania, co może prowadzić do szybszego rozwoju, mniejszej liczby błędów i lepszej jakości kodu.
 
+### Wzorce GRASP
+- ułatwiatja przydzielanie zadań do klas
+
+#### Creator
+- kto jest odpowiedzialny za tworzenie obiektów
+- jest częścią
+- blisko współpracuje
+- ma potrzebne dane
+
+#### Information Expert
+- która klasa posiada najwięcej informacji do wykonania zadania
+- np. ceny pojedyńczych produktów powinny być obliczane w SigleItem, Single item ma niezbędne iformacje, umieszczamy obliczenia tam gdzie mamy najwięcej informacji bazowych i pozbywamy się połączeń z niewspółpracujących klas
+
 # Metody
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
