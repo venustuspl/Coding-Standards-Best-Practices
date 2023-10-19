@@ -78,6 +78,13 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - która klasa posiada najwięcej informacji do wykonania zadania
 - np. ceny pojedyńczych produktów powinny być obliczane w SigleItem, Single item ma niezbędne iformacje, umieszczamy obliczenia tam gdzie mamy najwięcej informacji bazowych i pozbywamy się połączeń z niewspółpracujących klas
 
+#### Low Coupling
+- dążymy do lużnych powiązań, wystawiamy interfejsy (hermetyzacja) 
+- zmniejszamy ilość powiązań
+- duży coupling zmian powoduje, że jedna zmiana w danej klasie powoduje wiele zmian w innych klasach
+- klasy są trudniesze do zrozumienia
+- zmniejsza się możliwość dowolnego wykorzystania
+
 # Metody
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
