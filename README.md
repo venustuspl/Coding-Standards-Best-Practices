@@ -84,6 +84,11 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - duży coupling zmian powoduje, że jedna zmiana w danej klasie powoduje wiele zmian w innych klasach
 - klasy są trudniesze do zrozumienia
 - zmniejsza się możliwość dowolnego wykorzystania
+- klasy powinny porozumiewać się przez abstrakcję
+- brak abstrakcji powoduje, że ewentualne zmiany muszą wystąpić w wielu miejscach czyli mogą wystąpić błędy 
+Podział couplingu
+- Tight coupling - mocny coupling, czyli jedna klasa ma dużo powiązań z drugą klasą
+- 
 
 # Metody
 
