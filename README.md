@@ -88,7 +88,12 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - brak abstrakcji powoduje, że ewentualne zmiany muszą wystąpić w wielu miejscach czyli mogą wystąpić błędy 
 Podział couplingu
 - Tight coupling - mocny coupling, czyli jedna klasa ma dużo powiązań z drugą klasą
-- 
+- Light coupling - powiązanie klas za pomocą abstrakcji, użycie interfejsów, hermetyzacji, ukrywanie szczegółów implementacyjnych za konkretnym api 
+Rodzaje couuplingu
+1. Contentent coupling - jedna klasa manipuluje wnętrzem klasy drugiej klasy (klasa Customer manipuluje wartościami klasy Store)
+2.
+
+
 
 # Metody
 
