@@ -91,7 +91,9 @@ Podział couplingu
 - Light coupling - powiązanie klas za pomocą abstrakcji, użycie interfejsów, hermetyzacji, ukrywanie szczegółów implementacyjnych za konkretnym api 
 Rodzaje couuplingu
 1. Contentent coupling - jedna klasa manipuluje wnętrzem klasy drugiej klasy (klasa Customer manipuluje wartościami klasy Store)
-2.
+2. Common coupling - wykorzystanie wspólnie jakiegoś globalnego stanu, zmiana stanu może powodować błędy
+3. External coupling - struktura klasy nie powinna zależeć od zenętrznych struktur np. odbieranie wiadomości
+4. Control coupling - jedna klasa narzuca drugiej to co ma być zrobione np. activate(true) na activate as premium
 
 
 
