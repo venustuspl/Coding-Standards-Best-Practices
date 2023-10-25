@@ -94,9 +94,10 @@ Rodzaje couuplingu
 2. Common coupling - wykorzystanie wspólnie jakiegoś globalnego stanu, zmiana stanu może powodować błędy
 3. External coupling - struktura klasy nie powinna zależeć od zenętrznych struktur np. odbieranie wiadomości
 4. Control coupling - jedna klasa narzuca drugiej to co ma być zrobione np. activate(true) na activate as premium
+5. Stamp coupling - metoda np. przyjmuje parametr całą klasę User a używa tylko z tego obiektu 2 wartości
+6. Data coupling - przekazujemy do metod tylko porządane parametry
 
-
-
+Im mniejszy coupling tym lepiej. 
 # Metody
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
