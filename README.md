@@ -97,7 +97,8 @@ Rodzaje couuplingu
 5. Stamp coupling - metoda np. przyjmuje parametr całą klasę User a używa tylko z tego obiektu 2 wartości
 6. Data coupling - przekazujemy do metod tylko porządane parametry
 
-Im mniejszy coupling tym lepiej. 
+Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu. Refactoring dobieramy do konkretnego przypadku. Jeśli klasy mają wysoki coupling ale rzadko się komunikują należy czy usuwanie couplingu zdestabilizuje działanie klas.
+
 # Metody
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
