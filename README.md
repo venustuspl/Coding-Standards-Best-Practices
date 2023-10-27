@@ -79,7 +79,9 @@ Pisanie czystego kodu wymaga czasu i wysiłku, ale jest to inwestycja, która si
 - np. ceny pojedyńczych produktów powinny być obliczane w SigleItem, Single item ma niezbędne iformacje, umieszczamy obliczenia tam gdzie mamy najwięcej informacji bazowych i pozbywamy się połączeń z niewspółpracujących klas
 
 #### Low Coupling
-- dążymy do lużnych powiązań, wystawiamy interfejsy (hermetyzacja) 
+- dążymy do lużnych powiązań, wystawiamy interfejsy (hermetyzacja), klasy powinny komunikować się za pomocą abstrakcji
+- jedna klasa nie powinna znać szczegóły implementacyjne innej klasy
+- jedna klas nie powinna zależeć od drugiej klasy 
 - zmniejszamy ilość powiązań
 - duży coupling zmian powoduje, że jedna zmiana w danej klasie powoduje wiele zmian w innych klasach
 - klasy są trudniesze do zrozumienia
