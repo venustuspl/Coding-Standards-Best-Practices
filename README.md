@@ -270,6 +270,18 @@ First, our code should be effective, meaning it should solve the problem it's su
 Efficiency
 Second, once we know our code solves the problem, we should check if it does so efficiently. Does the program run using a reasonable amount of resources in terms of time and space? Can it run faster and with less space?
 
+# devox
+- inlining - sum 2 methods into one method
+- unrolling - put loop into method 
+- scalar replacement - takes only needed code to sum method
+- dead code elimination - nobody use created objects
+- lock elision - delete synchronize if lock is not needed
+- type sharpening - List<User> into ArrayList<User>
+- on stack replacement - get many time uses code in loop make it native and stop loop and put into loop
+- test should go on hot app(20 times) faster
+- debugging - stack is build from frames - so we can drop frame and start from selected frame
+
+
 ## 7. Clean Code by R. C. Martin 
 
 @Source https://gist.github.com/wojteklu/
