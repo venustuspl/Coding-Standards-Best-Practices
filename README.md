@@ -101,6 +101,13 @@ Rodzaje couuplingu
 
 Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu. Refactoring dobieramy do konkretnego przypadku. Jeśli klasy mają wysoki coupling ale rzadko się komunikują należy czy usuwanie couplingu zdestabilizuje działanie klas.
 
+#### Wzorzec Controler
+- controler koordynuje cały proces, Single reposibility i High Cohesion 
+
+#### Polimorfizm
+- jeśli klient używa polimorfizmu nie potrzebne są ify do zmian implementacji
+
+
 # Metody
 
 Metody nie powinny mieć skutków ubocznych - tzn. metoda powinna być odpowiedzailna za 1 zadanie a przynajmiej mówić w nazwie co robi. Nie powiązane kroki prepareOrder, sendStatus najlepiej wykonywać w ogólnej metodzie. A w mniejszych metodach wykonać te właśnie 2 kroki.
