@@ -99,6 +99,12 @@ Rodzaje couuplingu
 5. Stamp coupling - metoda np. przyjmuje parametr całą klasę User a używa tylko z tego obiektu 2 wartości
 6. Data coupling - przekazujemy do metod tylko porządane parametry
 
+#### High Coupling (wysoka kochezja)
+- kod zmienia się tylko w jednym miejscu
+- jeśli metody korzystają z kilku różnych atrybutów klasy tzn. mają niską kohezję i takie metody można rozdzielić
+- moduły z wysoko kohezją mają dobrze zindentyfikowany 1 cel Single Responsibility Principle
+- elementy które nie pasują do przeznaczenia danej klasy powinny zostać przeniesione do innej klasy
+
 Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu. Refactoring dobieramy do konkretnego przypadku. Jeśli klasy mają wysoki coupling ale rzadko się komunikują należy czy usuwanie couplingu zdestabilizuje działanie klas.
 
 #### Wzorzec Controler
