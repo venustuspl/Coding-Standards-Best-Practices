@@ -107,6 +107,28 @@ Rodzaje couuplingu
 
 Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu. Refactoring dobieramy do konkretnego przypadku. Jeśli klasy mają wysoki coupling ale rzadko się komunikują należy czy usuwanie couplingu zdestabilizuje działanie klas.
 
+#### CoincidentalCohesion / LogicCohesion
+- przypadkowa kochezja, gdy metody w danej klasie są ze sobą logicznie/biznesowo nie powiązanie powiązane 
+
+#### TemporaryCohesion
+- metody wykonywane w tym samym czasie
+
+#### ComunicationCohesion
+
+#### SequenceCohesion
+- kolejne metody zależą od wyniku poprzenich metod
+
+#### FunctionalCohesion
+- moduł/klasa powinien zajmować się 1 funkcjonalnością
+
+#### Wysoka Kohezja
+- gdy dane zmieniają się razem to powinny występować w jednej klasie
+
+#### Punktacja wag dotyczących kohezji (Larry C. & Edward Y.):
+
+
+
+
 #### Wzorzec Controler
 - controler koordynuje cały proces, Single reposibility i High Cohesion 
 
