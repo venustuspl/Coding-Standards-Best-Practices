@@ -99,7 +99,7 @@ Rodzaje couuplingu
 5. Stamp coupling - metoda np. przyjmuje parametr całą klasę User a używa tylko z tego obiektu 2 wartości
 6. Data coupling - przekazujemy do metod tylko porządane parametry
 
-#### High Coupling (wysoka kochezja)
+#### High Coupling (wysoka kohezja)
 - kod zmienia się tylko w jednym miejscu
 - jeśli metody korzystają z kilku różnych atrybutów klasy tzn. mają niską kohezję i takie metody można rozdzielić
 - moduły z wysoko kohezją mają dobrze zindentyfikowany 1 cel Single Responsibility Principle
@@ -125,8 +125,13 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 - gdy dane zmieniają się razem to powinny występować w jednej klasie
 
 #### Punktacja wag dotyczących kohezji (Larry C. & Edward Y.):
-
-
+coincidental - 0 pkt.
+logical - 1 pkt.
+temporal - 3 pkt.
+procedural - 5 pkt.
+communicational - 7 pkt.
+sequential - 9 pkt.
+functional - 10 pkt.
 
 
 #### Wzorzec Controler
