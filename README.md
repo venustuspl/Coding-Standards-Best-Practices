@@ -100,7 +100,9 @@ Rodzaje couuplingu
 6. Data coupling - przekazujemy do metod tylko porządane parametry
 
 #### High Coupling (wysoka kohezja)
-- kod zmienia się tylko w jednym miejscu
+- kohezja spójność elementów, im wyższa spójność tym wyższa kohezja
+- nazwa modułu powinna informować czym się dany moduł zajmuje
+- kod zmienia się tylko w jednym miejscu, wtedy ustalenie miejsca zmiany będzie łatwiejsze
 - jeśli metody korzystają z kilku różnych atrybutów klasy tzn. mają niską kohezję i takie metody można rozdzielić
 - moduły z wysoko kohezją mają dobrze zindentyfikowany 1 cel Single Responsibility Principle
 - elementy które nie pasują do przeznaczenia danej klasy powinny zostać przeniesione do innej klasy
@@ -126,7 +128,7 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 
 #### Punktacja wag dotyczących kohezji (Larry C. & Edward Y.):
 coincidental - 0 pkt.
-logical - 1 pkt.
+logical - 1 pkt.N
 temporal - 3 pkt.
 procedural - 5 pkt.
 communicational - 7 pkt.
