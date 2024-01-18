@@ -106,6 +106,8 @@ Rodzaje couuplingu
 - jeśli metody korzystają z kilku różnych atrybutów klasy tzn. mają niską kohezję i takie metody można rozdzielić
 - moduły z wysoko kohezją mają dobrze zindentyfikowany 1 cel Single Responsibility Principle
 - elementy które nie pasują do przeznaczenia danej klasy powinny zostać przeniesione do innej klasy
+- klasy powinny być projektowane tak aby dane, które zmieniają się razem były w jednej klasie
+- w projektowaniu klas dożymy do złotego środka, czyli nie należy komplikować aktualnych rozwiązań
 
 Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu. Refactoring dobieramy do konkretnego przypadku. Jeśli klasy mają wysoki coupling ale rzadko się komunikują należy czy usuwanie couplingu zdestabilizuje działanie klas.
 
@@ -127,7 +129,7 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 - gdy dane zmieniają się razem to powinny występować w jednej klasie
 
 #### Punktacja wag dotyczących kohezji (Larry C. & Edward Y.):
-coincidental - 0 pkt.
+coincidental - 0 pkt. - najgorszy
 logical - 1 pkt.N
 temporal - 3 pkt.
 procedural - 5 pkt.
