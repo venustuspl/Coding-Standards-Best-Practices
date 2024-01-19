@@ -114,8 +114,11 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 #### CoincidentalCohesion / LogicCohesion
 - przypadkowa kochezja, gdy metody w danej klasie są ze sobą logicznie/biznesowo nie powiązanie powiązane 
 
+#### Logical Cohesion 
+- grupowanie metod logicznie (operacje matematyczne), ale nie są ze sobą wzajemnie powiązane, powinny być przeniesione do modułow które je wykorzystują
+
 #### TemporaryCohesion
-- metody wykonywane w tym samym czasie
+- metody wykonywane w tym samym czasie (powiązanie tylko czasowe)
 
 #### ComunicationCohesion
 
