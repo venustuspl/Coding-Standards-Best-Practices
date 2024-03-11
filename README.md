@@ -121,6 +121,7 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 - metody wykonywane w tym samym czasie (powiązanie tylko czasowe)
 
 #### ComunicationCohesion
+- operowanie na tych samych danych, np. dodawanie/edytowanie klientów
 
 #### SequenceCohesion
 - kolejne metody zależą od wyniku poprzenich metod
@@ -132,7 +133,7 @@ Im mniejszy coupling tym lepiej. Nie usuwamy couplingu kosztem komplikacji kodu.
 - gdy dane zmieniają się razem to powinny występować w jednej klasie
 
 #### Punktacja wag dotyczących kohezji (Larry C. & Edward Y.):
-coincidental - 0 pkt. - najgorszy
+coincidental - 0 pkt. - najmniejsza waga, należy poprawiać od najniższych kohezji
 logical - 1 pkt.N
 temporal - 3 pkt.
 procedural - 5 pkt.
@@ -143,6 +144,10 @@ functional - 10 pkt.
 
 #### Wzorzec Controler
 - controler koordynuje cały proces, Single reposibility i High Cohesion 
+
+#### Pośrednictwo
+Występuje np. gdy klasa UserService komunikuje się z klasą UserRepository oraz posiadają pośrednika do komunikacji interfejs UserRepository.
+Interfejs staje się pośrednikiem, zwiększamy elastyczność, ukrywamy szczegóły implementacyjne. Połączone klasy nic nie wiedzą o sobie. Zwiększamy modułowość i testowalność aplikacji. Klasy można łatwiej rozszeżać. Może być trudniejsze debugowanie kodu. Większa ilość pośredników może powodować komplikację systemu.
 
 #### Polimorfizm
 - jeśli klient używa polimorfizmu nie potrzebne są ify do zmian implementacji
