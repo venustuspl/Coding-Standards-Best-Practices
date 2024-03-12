@@ -149,6 +149,10 @@ functional - 10 pkt.
 Występuje np. gdy klasa UserService komunikuje się z klasą UserRepository oraz posiadają pośrednika do komunikacji interfejs UserRepository.
 Interfejs staje się pośrednikiem, zwiększamy elastyczność, ukrywamy szczegóły implementacyjne. Połączone klasy nic nie wiedzą o sobie. Zwiększamy modułowość i testowalność aplikacji. Klasy można łatwiej rozszeżać. Może być trudniejsze debugowanie kodu. Większa ilość pośredników może powodować komplikację systemu.
 
+#### Protected Variations
+Czyli ochrona zmienności. Identyfikujemy zmienne/wrażliwe/często zmieniane puktny na zmiane i ukrywamy je za interfejsami i abstrakcją.
+Jedyne co jest pewne w systemie to zmiana. Dążymy do łatwości wprowadzania zmian. Można wykorzystywać: hermetyzację, wprowadzenie interfejsu(pośrednika), OpenClosePrinciple, ukrywanie elementów w obiekcie a na zewnątrz wystawienie metod.
+
 #### Polimorfizm
 - jeśli klient używa polimorfizmu nie potrzebne są ify do zmian implementacji
 
