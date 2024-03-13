@@ -153,6 +153,9 @@ Interfejs staje się pośrednikiem, zwiększamy elastyczność, ukrywamy szczeg�
 Czyli ochrona zmienności. Identyfikujemy zmienne/wrażliwe/często zmieniane puktny na zmiane i ukrywamy je za interfejsami i abstrakcją.
 Jedyne co jest pewne w systemie to zmiana. Dążymy do łatwości wprowadzania zmian. Można wykorzystywać: hermetyzację, wprowadzenie interfejsu(pośrednika), OpenClosePrinciple, ukrywanie elementów w obiekcie a na zewnątrz wystawienie metod.
 
+#### Pure Fabrications
+Czyli czysty wymysł. Tworzenie nowej klasy dla nowej funkcjonalności, która nie niesie ze sobą problemu biznesowego. Należy tak dodawać klasy aby nie łamać High Cohesion jakiejś istniejącej klasy. Ale nie przesadzamy z tworzeniem nowych klas tylko realna wartość. Chodzi o łatwość w utrzymaniu i rozwoju. Wzorce Adaptery, Strategie.
+
 #### Polimorfizm
 - jeśli klient używa polimorfizmu nie potrzebne są ify do zmian implementacji
 
