@@ -3,7 +3,7 @@ package pl.praktycznajava.module5.grasp.challenge2;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import pl.praktycznajava.module5.grasp.challenge2.example.Task;
-import pl.praktycznajava.module5.grasp.challenge2.repository.ProjectRepositoryImpl;
+import pl.praktycznajava.module5.grasp.challenge2.repository.ProjectRepository;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public class Project {
     private String projectDescription;
     private List<Task> tasks;
 
-    public void changeProjectName(String newProjectName, ProjectRepositoryImpl projectRepositoryImpl) {
+    public void changeProjectName(String newProjectName, ProjectRepository projectRepositoryImpl) {
         if (projectRepositoryImpl.isNameDuplicate(newProjectName)) {
             throw new IllegalArgumentException("Project with the same name already exists.");
         }
