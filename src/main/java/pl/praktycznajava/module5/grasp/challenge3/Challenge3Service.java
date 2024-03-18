@@ -22,21 +22,21 @@ public class Challenge3Service {
 
 
     void transferMoney(AccountBalance sender, AccountBalance receiver, Amount transferAmount) {
-        Amount receiverBalance = OperationsUtil.add(receiver.getBalance(), transferAmount);
-        Amount senderBalance = OperationsUtil.subtract(receiver.getBalance(), transferAmount);
+        Amount receiverBalance = receiver.getBalance().add(transferAmount);
+        Amount senderBalance = receiver.getBalance().subtract(transferAmount);
         // dalsze działania
     }
 
     public Amount calculateDiscountedPrice(Order order, Percentage percentageDiscount) {
         Amount totalAmount = order.getTotalAmount();
-        Amount discountAmount = OperationsUtil.getDiscountAmountByPercentage(totalAmount, percentageDiscount);
-        Amount discountedAmount = OperationsUtil.subtract(totalAmount, discountAmount);
+        Amount discountAmount = percentageDiscount.getDiscountAmountByPercentage(totalAmount);
+        Amount discountedAmount = totalAmount.subtract(discountAmount);
         return discountedAmount;
     }
 
 
     boolean isSubjectPassed(Grades grades, Double minimumAverage) {
-        double calculatedAverage = OperationsUtil.calculateAverage(grades);
+        double calculatedAverage = grades.calculateAverage();
         // dalsze wyliczenia
         return false;
     }

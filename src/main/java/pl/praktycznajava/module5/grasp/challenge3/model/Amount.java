@@ -9,4 +9,18 @@ import java.math.BigDecimal;
 @AllArgsConstructor(staticName = "of")
 public class Amount {
     private final BigDecimal value;
+
+    public Amount subtract(Amount second) {
+        if (second == null) {
+            return null;
+        }
+        return Amount.of(this.getValue().subtract(second.getValue()));
+    }
+
+    public Amount add(Amount second) {
+        if (second == null) {
+            return null;
+        }
+        return Amount.of(this.getValue().add(second.getValue()));
+    }
 }
